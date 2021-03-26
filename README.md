@@ -21,10 +21,29 @@ We will be taking a look at the school district as a whole and how the informati
 ![SchoolSum](https://user-images.githubusercontent.com/14188580/112643519-721d2400-8e12-11eb-81e2-f5bc80dbb913.PNG)
 <br>
 
-*
+* The School Summary above is being displayed above as a pd.DF copy with formatting for an easier-to-digest visualization. I needed to keep all floats intact for future calculations, but by making a formatted copy I'm able to avoid "chewy" dataframes.
+* This Summary contains all of the information that will be used for further data diving.
+<br>
+<br>
 
+![thomas_with_9th](https://user-images.githubusercontent.com/14188580/112650440-62550e00-8e19-11eb-8c18-29d2bd28d9ea.PNG)
+<br>
+* The jupyter output above shows the average math and reading scores for Thomas High School by grade as well as combined.
+* Compared to the rest of the classes at Thomas High School, the 9th grade data does not immediately scream "academic dishonesty". While the math average is the highest among the classes at this high school, the difference is not even 0.1% compared to the next highest class average.
+<br>
 
-How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+Compared to the rest of the schools in the district, after removing the 9th grade data; Thomas High School is ranked #2 in terms of overall passing percentage.<br>
+![Top5_withNaN](https://user-images.githubusercontent.com/14188580/112651926-de9c2100-8e1a-11eb-8154-a977bc023db5.PNG)<br>
+#### Items to Note:
+* This data is calculated after converting all Thomas High School 9th Grader scores to NaN.
+* Comparing the Average Scores for Thomas High School from the chart above to the highlighted data we saw before NaN conversion, the Average Math Score increased by 0.06% while the Average Reading Score increased by 0.05%.
+* Thomas High School's Overall Passing Percentage is 90.63 when removing 9th grade data. When I comment out the conversion to NaN and rerun calculations adjusting for the entire student body at Thomas High School, the new overall passing average can be seen below.
+<br>
+![ths_overall_withoutNaN](https://user-images.githubusercontent.com/14188580/112653807-c9c08d00-8e1c-11eb-9d96-6b2fbc381eb8.PNG)
+<br>
+We can conclude that with or without 9th grade data, Thomas High School's standing against the other schools in the district does not change. The difference is neither enough to knock it down a place nor reach first place.
+<br><br>
+
 
 How does replacing the ninth-grade scores affect the following:
 Math and reading scores by grade
