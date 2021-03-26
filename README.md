@@ -45,11 +45,30 @@ Compared to the rest of the schools in the district, after removing the 9th grad
 We can conclude that with or without 9th grade data, Thomas High School's standing against the other schools in the district does not change. The difference is neither enough to knock it down a place nor reach first place.
 <br>
 
+### Math and reading scores by grade
+![avg_math_withNaN](https://user-images.githubusercontent.com/14188580/112655815-c9c18c80-8e1e-11eb-9714-058261c4d133.PNG)
+![avg_reading_withNaN](https://user-images.githubusercontent.com/14188580/112655848-d0e89a80-8e1e-11eb-9d62-9428d62c672a.PNG)
+<br>
+* Above are the average scores for each school in the district by grade. By converting THS 9th grade scores to float(NaN), we are given a NaN in our output as well.
+<br><br>
 
-How does replacing the ninth-grade scores affect the following:
-Math and reading scores by grade
-Scores by school spending
-Scores by school size
-Scores by school type
+### Scores by school spending
+![scores_by_schoolspending_withNaN](https://user-images.githubusercontent.com/14188580/112656524-7d2a8100-8e1f-11eb-96d0-8b0929f72721.PNG)
+![scores by spending](https://user-images.githubusercontent.com/14188580/112657144-1bb6e200-8e20-11eb-9b33-17582e48d3f5.PNG)
 
-Summary: Summarize four major changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+* There is no discernable difference in this data whether including or excluding the 9th graders at Thomas High School.
+* An interesting point to note is the inverse relationship between spending per capita and average passing percentage.
+<br><br>
+
+### Scores by school size
+![scores_by_size_withNaN](https://user-images.githubusercontent.com/14188580/112659533-7a7d5b00-8e22-11eb-9cda-1cdd5e826661.PNG)
+
+* By cutting the data to focus on the student population size of a school, we can infer that larger schools have a much harder time keeping their averages up.
+* If I was to include the 9th grade data from Thomas High School, the "Medium (1000-2000)" row would change by about 0.01% per value, but not enough to add weight to the rounded values.
+<br><br>
+
+### Scores by school type
+![scores_by_type_withNaN](https://user-images.githubusercontent.com/14188580/112658919-e27f7180-8e21-11eb-92e4-f66a5dc9456f.PNG)
+* Cutting the dataframe based on the type school shows a heavy score difference showing Charter schools with much higher scores and passing percentages.
+
+## Summary:
