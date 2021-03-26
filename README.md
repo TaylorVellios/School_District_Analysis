@@ -24,7 +24,6 @@ We will be taking a look at the school district as a whole and how the informati
 * The School Summary above is being displayed above as a pd.DF copy with formatting for an easier-to-digest visualization. I needed to keep all floats intact for future calculations, but by making a formatted copy I'm able to avoid "chewy" dataframes.
 * This Summary contains all of the information that will be used for further data diving.
 <br>
-<br>
 
 ![thomas_with_9th](https://user-images.githubusercontent.com/14188580/112650440-62550e00-8e19-11eb-8c18-29d2bd28d9ea.PNG)
 <br>
@@ -39,10 +38,12 @@ Compared to the rest of the schools in the district, after removing the 9th grad
 * Comparing the Average Scores for Thomas High School from the chart above to the highlighted data we saw before NaN conversion, the Average Math Score increased by 0.06% while the Average Reading Score increased by 0.05%.
 * Thomas High School's Overall Passing Percentage is 90.63 when removing 9th grade data. When I comment out the conversion to NaN and rerun calculations adjusting for the entire student body at Thomas High School, the new overall passing average can be seen below.
 <br>
-![ths_overall_withoutNaN](https://user-images.githubusercontent.com/14188580/112653807-c9c08d00-8e1c-11eb-9d96-6b2fbc381eb8.PNG)
+
+![ths_overall_withoutNaN](https://user-images.githubusercontent.com/14188580/112654223-2b80f700-8e1d-11eb-8b92-3d0837a622b6.PNG)
+
 <br>
 We can conclude that with or without 9th grade data, Thomas High School's standing against the other schools in the district does not change. The difference is neither enough to knock it down a place nor reach first place.
-<br><br>
+<br>
 
 
 How does replacing the ninth-grade scores affect the following:
