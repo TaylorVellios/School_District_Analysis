@@ -72,3 +72,5 @@ We can conclude that with or without 9th grade data, Thomas High School's standi
 * Cutting the dataframe based on the type school shows a heavy score difference showing Charter schools with much higher scores and passing percentages.
 
 ## Summary:
+In conclusion, if there is any academic dishonesty at Thomas High School, it must be confined to a very small number of individuals who struggle with math.
+The largest changes in data when including this questionable data can be seen in Thomas High Schools overall averages, as well as averages by grade across the district where we can see NaN in a sea of actual values.
