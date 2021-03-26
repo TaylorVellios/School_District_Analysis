@@ -1,12 +1,29 @@
 # School_District_Analysis
 Python Pandas
 
-Overview of the school district analysis: Explain the purpose of this analysis.
+## Overview
+An analysis of math and reading scores for highschools across an entire school district.<br>
+In this scenario we have been informed of the possibility of academic dishonesty regarding a specific school's scores.<br>
+We will be taking a look at the school district as a whole and how the information changes with and without the questionable data.
+<br><br>
 
-Results: Using bulleted lists and images of DataFrames as support, address the following questions.
+## Results:
+### District Summary
+![DistrictSum](https://user-images.githubusercontent.com/14188580/112642476-59603e80-8e11-11eb-8491-1a1fa1cfb5bd.PNG)
+<br>
 
-How is the district summary affected?
-How is the school summary affected?
+* The District Summary above as well as the School Summary below have been calculated after removing 9th grade scores from Thomas High School.<br>
+* Whatever the values were, I used pandas .loc to convert 9th grade data from THS to NaN.
+* At our birds-eye view in the District Summary, we can see a trend of greater student aptitude towards Reading compared to Math, as we zoom in we will confirm this.
+<br>
+
+### School Summary
+![SchoolSum](https://user-images.githubusercontent.com/14188580/112643519-721d2400-8e12-11eb-81e2-f5bc80dbb913.PNG)
+<br>
+
+*
+
+
 How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 
 How does replacing the ninth-grade scores affect the following:
